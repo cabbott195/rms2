@@ -13,18 +13,18 @@ router.get('/', ir_controller.index);
 router.get('/ir/create', ir_controller.createIr_GET);
 
 // POST request for creating IR.
-// router.post('/ir/create', 'test');
+ router.post('/ir/create', ir_controller.createIr_POST);
 
 // // GET request to delete IR.
-// router.get('/ir/:id/delete', 'test');
+router.get('/ir/:id/delete', ir_controller.deleteIr_GET);
 
 // // POST request to delete IR.
-// router.post('/ir/:id/delete', 'test');
+router.post('/ir/:id/delete', ir_controller.deleteIr_POST);
 
 // // GET request to update IR.
-// router.get('/ir/:id/update', 'test');
+router.get('/ir/:id/update', ir_controller.updateIr_GET);
 
 // // POST request to update IR.
-// router.post('/ir/:id/update', 'test');
+router.post('/ir/:id/update', ir_controller.updateIr_POST);
 
 module.exports = router;
