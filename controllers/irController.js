@@ -1,11 +1,11 @@
 var Ir = require('../models/ir');
 
 exports.index = function(req, res){
-    res.send('index');
+    res.render('index', {title: 'RMS App'});
 }
 
 exports.createIr_GET = function(req, res){
-    res.send('createIr_GET');
+    res.render('ir', {title: 'Create Report'});
 }
 
 exports.createIr_POST = function(req, res){
