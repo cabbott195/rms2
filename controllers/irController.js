@@ -4,26 +4,26 @@ exports.index = function(req, res){
     res.render('index', {title: 'RMS App'});
 }
 
-exports.createIr_GET = function(req, res){
-    res.render('ir', {title: 'Create Report'});
+exports.ir_GET = function(req, res){
+    res.render('ir_GET', {title: 'Create Report'});
 }
 
-exports.createIr_POST = function(req, res){
-    res.send('createIr_POST');
+exports.ir_POST = function(req, res){
+    res.send('ir_POST');
 }
 
-exports.deleteIr_GET = function(req, res){
-    res.send('deleteIr_GET');
+exports.viewIr_GET = function(req, res){
+    res.send('viewIr_GET');
 }
 
-exports.deleteIr_POST = function(req, res){
-    res.send('deleteIr_POST');
+exports.viewIr_POST = function(req, res){
+    res.send('viewIr_POST');
 }
 
-exports.updateIr_GET = function(req, res){
-    res.send('updateIr_GET');
+exports.updatedIrs_GET = function(req, res){
+    res.send('updatedIrs_GET');
 }
 
-exports.updateIr_POST = function(req, res){
-    res.send('updateIr_POST');
+exports.updatedIrs_POST = function(req, res){
+    res.send('updatedIrs_POST');
 }
