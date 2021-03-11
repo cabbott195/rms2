@@ -2,28 +2,28 @@ var Ir = require('../models/ir');
 
 exports.index = function(req, res){
     res.render('index', {title: 'RMS App'});
-}
+};
 
 exports.ir_GET = function(req, res){
-    res.render('ir_GET', {title: 'Create Report'});
-}
+    res.render('ir', {title: 'Create Report'});
+};
 
 exports.ir_POST = function(req, res){
-    res.send('ir_POST');
-}
+    res.send('ir');
+};
 
 exports.viewIr_GET = function(req, res){
-    res.send('viewIr_GET');
-}
+    res.send('viewIr');
+};
 
 exports.viewIr_POST = function(req, res){
-    res.send('viewIr_POST');
-}
+    res.send('viewIr');
+};
 
 exports.updatedIrs_GET = function(req, res){
-    res.send('updatedIrs_GET');
-}
+    res.send('updatedIrs');
+};
 
 exports.updatedIrs_POST = function(req, res){
-    res.send('updatedIrs_POST');
-}
+    res.send('updatedIrs');
+};

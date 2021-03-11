@@ -1,16 +1,14 @@
 extends layout
 
 block content
-  h1=title
+  h1= title
 
-
-
-form(method='POST' action='')
+  form(method='POST' action='')
     div.form-group
       label(for='first_name') First Name
       input#first_name.form-control(type='text', placeholder='First name' name='first_name' required='true' value=(undefined===person ? '' : person.first_name) )
       label(for='last_name') Last Name
-      input#last_name.form-control(type='text', placeholder='Last name' name='last_name' required='true' value=(undefined===person ? '' : person.last_name))
+      input#last_name.form-control(type='text', placeholder='Last name' name='last_name' required='true' value=(undefined===person ? '' : person.last_name) )
     div.form-group
       label(for='date_of_birth') Date of birth
       input#date_of_birth.form-control(type='date', name='date_of_birth' value=(undefined===person ? '' : person.date_of_birth_mm_dd_yyyy) )
@@ -44,7 +42,7 @@ form(method='POST' action='')
     div.form-group
       label(for='p_phone') Telephone
       input#p_phone.form-control(type='text', name='p_phone' value=(undefined===person ? '' : person.p_phone) )
-     div.form-group
+    div.form-group
       label(for='p_ssn') Social Security Number
       input#p_ssn.form-control(type='text', name='p_ssn' value=(undefined===person ? '' : person.p_ssn) )
     div.form-group
@@ -75,7 +73,7 @@ form(method='POST' action='')
     div.form-group
       label(for='v_make') Make
       input#v_make.form-control(type='text', name='v_make' value=(undefined===vehicle ? '' : person.v_make) )
-     div.form-group
+    div.form-group
       label(for='v_model') Model
       input#v_model.form-control(type='text', name='v_model' value=(undefined===vehicle ? '' : person.v_model) )
     div.form-group

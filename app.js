@@ -14,6 +14,7 @@ var app = express();
 var mongoose = require('mongoose');
 
 var mongoDB = 'mongodb+srv://cabbott195:J9ihPHDuSS2hZv3@cluster0.2sbog.mongodb.net/Cluster0?retryWrites=true&w=majority';
+mongoose.Promise = global.Promise;
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
 
 //Get the default connection
